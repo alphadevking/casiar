@@ -1,5 +1,18 @@
 *{
     box-sizing: border-box;
-    font-family: Lato, sans-serif;
+    font-family: 'Lao ui', sans-serif;
+    transition: all .3s;
+}
+
+.glass{
+    background-color: none;
+    backdrop-filter: 1px;
+}
+
+.glass{
+    background: rgba(#2e2246, 0.5);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    -webkit-backdrop-filter: blur(10.5px);
+    backdrop-filter: blur(10px);
     transition: all .3s;
 }

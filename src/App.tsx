@@ -1,28 +1,24 @@
 import {
-  Box, ChakraProvider, SimpleGrid
+  ChakraProvider
 } from "@chakra-ui/react"
-import * as React from "react"
+
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ColorModeSwitcher } from './Components/utils/ColorModeSwitcher';
-import { Container } from "react-bootstrap";
-
+import Prenav from "./Components/Prenav/Prenav";
+import Nav from "./Components/NavigationBar/Nav";
 
 export const App = () => (
   <ChakraProvider>
 
-    <Container>
+    <Prenav openTime="10 AM" closeTime="5 PM"/>
 
-      <ColorModeSwitcher/>
+    <section>
+      <Nav/>
+    </section>
 
-      <SimpleGrid columns={2} spacing={5}>
+    <section></section>
 
-        <Box>Hey</Box>
-        <Box></Box>
-
-      </SimpleGrid>
-
-    </Container>
+    <section></section>
 
   </ChakraProvider>
 )
