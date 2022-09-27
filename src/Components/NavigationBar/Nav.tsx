@@ -1,24 +1,24 @@
 import { Flex, Spacer } from "@chakra-ui/react";
-import casiarLogo from '../Static/images/casiar-banner.png'
-import { ColorModeSwitcher } from "../utils/ColorModeSwitcher";
+import casiarLogo from '../Static/images/casiar-solid.png'
+
 
 const imagestyle = {
-    width: '5em',
+    width: '4rem',
+    padding: '.4rem'
 }
 
 const navbarstyle = {
-    border: '1px solid white',
+    border: '1px solid black',
+    padding: '0vw 5vw',
+    width: '100%',
+    display: 'flex',
 }
 
 const Nav = () => {
     return(
-        <Flex className='glass' style={navbarstyle}>
-            <div className="p-2">
-                <span className="d-flex"><img src={casiarLogo} style={imagestyle}/></span>
-                
-                <Spacer />
-
-                <span><ColorModeSwitcher/></span>
+        <Flex className='glass'>
+            <div style={navbarstyle}>
+                <span ><img src={casiarLogo} style={imagestyle}/>asiar</span>
             </div>
         </Flex>
     )

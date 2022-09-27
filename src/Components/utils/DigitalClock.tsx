@@ -9,7 +9,7 @@ function DigitalClock(){
 
   useEffect ( () => {
     setInterval (refreshClock, 1000);
-  })
+  }, []);
 
   return (
     <span>
@@ -17,4 +17,5 @@ function DigitalClock(){
     </span>
   );
 }
+
 export default DigitalClock;

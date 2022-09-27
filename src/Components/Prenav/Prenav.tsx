@@ -4,13 +4,16 @@ import LocationPlugin from '../LocationPlugin/Location';
 import DigitalClock from '../utils/DigitalClock';
 import Props from './types'
 
+const bgstyle = {
+  backgroundColor: '#060920',
+}
 const style = {
   fontSize: '12px',
-  backgroundColor: 'dark',
+  color: 'white',
   width: '100%',
   padding: '0px 10px',
   display: 'flex',
-  borderRadius: '5px'
+  
 }
 
 const Prenav: React.FC<Props> = (
@@ -22,14 +25,16 @@ const Prenav: React.FC<Props> = (
     
   return (
     <>
-        <div style={style} className='shadow-sm'>
-            <span><small>We are open from {openTime} to {closeTime}</small></span>
-            <Spacer/>
-            <span>
-              <LocationPlugin/>
-              <span className='p-1'></span>
-              <small><DigitalClock/></small>
-            </span>
+        <div style={bgstyle}>
+          <div style={style} className='shadow-sm container'>
+              <span><small>We are open from {openTime} to {closeTime}</small></span>
+              <Spacer/>
+              <span>
+                <LocationPlugin/>
+                <span style={{padding: '10px'}}></span>
+                <small><DigitalClock/></small>
+              </span>
+          </div>
         </div>
     </>
   )
