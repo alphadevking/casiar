@@ -7,6 +7,7 @@ function DigitalClock(){
     setDate(new Date());
   }
 
+  // Adding an empty array to a useEffect hook tells it to run the function just once.
   useEffect ( () => {
     setInterval (refreshClock, 1000);
   }, []);

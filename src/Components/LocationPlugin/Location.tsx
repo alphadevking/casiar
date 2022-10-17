@@ -1,8 +1,12 @@
-// import Location from './types'
+import Location from "./types"
 
-const LocationPlugin = () => {
+const LocationPlugin: React.FC<Location> = (
+	{
+		locale = '25 Boulevard Street, Lagos, Nigeria',
+	}
+) => {
     return(
-        <small><i className='fa fa-user'></i>25 Boulevard Street, Lagos, Nigeria</small>
+        <small>{locale}</small>
     )
 }
 

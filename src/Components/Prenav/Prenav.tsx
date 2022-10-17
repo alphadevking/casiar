@@ -1,7 +1,7 @@
-import { Spacer } from '@chakra-ui/react';
+import { Spacer, Box, HStack } from '@chakra-ui/react';
 import React from 'react'
 import LocationPlugin from '../LocationPlugin/Location';
-import DigitalClock from '../utils/DigitalClock';
+import DigitalClock from '../../utils/DigitalClock';
 import Props from './types'
 
 const bgstyle = {
@@ -25,17 +25,18 @@ const Prenav: React.FC<Props> = (
     
   return (
     <>
-        <div style={bgstyle}>
-          <div style={style} className='shadow-sm container'>
-              <span><small>We are open from {openTime} to {closeTime}</small></span>
+        <Box style={bgstyle}>
+          <Box style={style} className='shadow-sm container'>
+              <small>We are open from {openTime} to {closeTime}</small>
               <Spacer/>
-              <span>
-                <LocationPlugin/>
-                <span style={{padding: '10px'}}></span>
-                <small><DigitalClock/></small>
-              </span>
-          </div>
-        </div>
+              <Box>
+                <HStack>
+                  <LocationPlugin/>
+                  <small><DigitalClock/></small>
+                </HStack>
+              </Box>
+          </Box>
+        </Box>
     </>
   )
 }

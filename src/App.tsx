@@ -1,24 +1,18 @@
-import {
-  ChakraProvider
-} from "@chakra-ui/react"
-
+import { ChakraProvider } from "@chakra-ui/react"
+import { Routes, Route } from "react-router"
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Prenav from "./Components/Prenav/Prenav";
-import Nav from "./Components/NavigationBar/Nav";
+import { Home } from "./pages/Home";
+import { NoPage } from "./pages/NotFound";
 
 export const App = () => (
   <ChakraProvider>
 
-    <Prenav openTime="10 AM" closeTime="5 PM"/>
+      <Routes>
+        <Route path = '/' element={<Home/>} />
 
-    <section>
-      <Nav/>
-    </section>
-
-    <section></section>
-
-    <section></section>
+        <Route path="*" element={<NoPage/>} />
+      </Routes>
 
   </ChakraProvider>
 )
