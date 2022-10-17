@@ -5,6 +5,7 @@ import { Box, Stack } from '@chakra-ui/react';
 const styles: string | number | any = []
 
     styles.headerStyle = {
+        marginTop: '30px',
         fontSize: '2rem',
         fontWeight: 'bold',
         color: '#004266',
