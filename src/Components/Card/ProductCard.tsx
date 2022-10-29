@@ -7,7 +7,9 @@ const ProductCard: React.FC<CardProps> = () => {
     }, [])
 
     return (
-      <></>
+      <>
+        
+      </>
     )
   }
   

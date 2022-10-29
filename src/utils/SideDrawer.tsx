@@ -1,22 +1,22 @@
-import React from 'react'
+
 import {
     Drawer,
     DrawerBody,
-    DrawerFooter,
+    // DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
-    DrawerCloseButton,
-    RadioGroup,
-    Stack,
+    // DrawerCloseButton,
+    // RadioGroup,
+    // Stack,
     useDisclosure,
-    Radio,
+    // Radio,
     Button
   } from '@chakra-ui/react'
 
   function SideDrawer() {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [placement, setPlacement] = React.useState('right')
+    // const [placement, setPlacement] = React.useState('right')
   
     return (
       <>
