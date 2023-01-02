@@ -1,4 +1,2 @@
-## Casiar Art Gallery
-
-## Licence
-**MIT**
+# Casiar Art Gallery
+Everything you need!
