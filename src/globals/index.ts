@@ -18,4 +18,5 @@ export interface GlobalTypes {
     openTime?: string | undefined,
     closeTime?: string | undefined,
     prenav?: boolean | undefined,
+    logoName?: string | undefined,
 }

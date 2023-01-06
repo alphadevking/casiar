@@ -13,14 +13,14 @@ const Layout:React.FC<GlobalTypes> = ({ prenav, navbar, children, footer}) => (
             prenav?
                 <Prenav openTime='8am' closeTime='5pm'/>
                 :
-                <></>
+                null
         }
 
         {
             navbar ?
                 <Navbar />
                 :
-                <></>
+                null
         }
 
         {children}
@@ -29,7 +29,7 @@ const Layout:React.FC<GlobalTypes> = ({ prenav, navbar, children, footer}) => (
             footer ?
                 <Footer />
                 :
-                <></>
+                null
         }
 
     </AppWrapper>

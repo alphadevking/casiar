@@ -7,9 +7,9 @@ export const Navbar = () => {
 
   return (
 
-    <div className='px-[10vw] py-2 shadow-md'>
+    <div className='px-[10vw] py-2 shadow-md sticky top-0 z-50 bg-inherit/30 backdrop-blur'>
 
-      <LogoImage />
+      <LogoImage logoName='Casiar'/>
 
       <nav className='flex float-right gap-5'>
         {topNavItems.map((val, key) => {
