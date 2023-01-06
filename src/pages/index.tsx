@@ -1,11 +1,19 @@
-import * as React from "react"
-import type { PageProps } from "gatsby"
+import React, { useState } from 'react'
+import { Helmet } from 'react-helmet';
+import Layout from '../components/Layout';
 
-const IndexPage: React.FC<PageProps> = () => {
+export default function IndexPage() {
+  
   return (
-    <main>
-    </main>
+    <React.Fragment>
+
+      <Helmet>
+        <title>Casiar Web Store</title>
+      </Helmet>
+
+      <Layout prenav navbar footer>
+      </Layout>
+
+    </React.Fragment>
   )
 }
-
-export default IndexPage

@@ -1,11 +1,11 @@
 import React from 'react'
+import { GlobalTypes } from '../globals/index';
+import '../styles/global.css'
 
-const AppWrapper:React.FC = ({
-    children
-}:any) => {
+export const AppWrapper:React.FC<GlobalTypes> = ({ children }) => {
   return (
-    <div>{children}</div>
+    <div>
+      {children}
+    </div>
   )
 }
-
-export default AppWrapper

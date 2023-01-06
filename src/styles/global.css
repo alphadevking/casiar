@@ -2,4 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-*{}
+*{
+    font-family: "lao ui", sans-serif;
+}
+
+@media screen and (prefers-color-scheme:dark){
+    body{
+        @apply bg-slate-800 text-white
+    }
+}
+
+@media screen and (prefers-color-scheme:light){
+    body{
+        @apply bg-white text-slate-800
+    }
+}

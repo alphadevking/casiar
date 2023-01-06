@@ -1,2 +1,3 @@
-# Casiar Art Gallery
-Everything you need!
+<h1 align="center">
+  🚀NFT Apocalypse (NFTx)
+</h1>
