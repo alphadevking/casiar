@@ -26,7 +26,7 @@ export const ArtCard: React.FC<CardTypes> = (
             
             {/* Card */}
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><StaticImage src={'../../assets/images/cover-image.jpg'} alt="" /></figure>
+                <figure><StaticImage src='../../assets/images/cover-image.jpg' alt="" /></figure>
                 <div className="card-body relative">
                     <h2 className="card-title">{title}</h2>
                     <p>{subTitle}</p>

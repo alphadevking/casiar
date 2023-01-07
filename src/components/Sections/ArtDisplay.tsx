@@ -9,6 +9,18 @@ export const ArtDisplay = () => {
               <ArtCard src='cover-image.jpg' artPrice='5 ETH' title='Avalanche Birdie' subTitle='A very perculiar niche of birds set out to conquer the northern region of every pole.'/>
         </div>
 
+        <div className='carousel-item'>
+              <ArtCard src='cover-image.jpg' artPrice='5 ETH' title='Avalanche Birdie' subTitle='A very perculiar niche of birds set out to conquer the northern region of every pole.'/>
+        </div>
+
+        <div className='carousel-item'>
+              <ArtCard src='cover-image.jpg' artPrice='5 ETH' title='Avalanche Birdie' subTitle='A very perculiar niche of birds set out to conquer the northern region of every pole.'/>
+        </div>
+        
+        <div className='carousel-item'>
+              <ArtCard src='cover-image.jpg' artPrice='5 ETH' title='Avalanche Birdie' subTitle='A very perculiar niche of birds set out to conquer the northern region of every pole.'/>
+        </div>
+
     </div>
   )
 }
