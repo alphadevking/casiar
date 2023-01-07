@@ -7,32 +7,36 @@ import { Prenav } from './Navigation/Prenav';
 
 const Layout:React.FC<GlobalTypes> = ({ prenav, navbar, children, footer}) => (
 
-    <AppWrapper>
+    <div className='min-h-screen min-w-fit'>
 
-        {
-            prenav?
-                <Prenav openTime='8am' closeTime='5pm'/>
-                :
-                null
-        }
+        <AppWrapper>
 
-        {
-            navbar ?
-                <Navbar />
-                :
-                null
-        }
+            {
+                prenav ?
+                    <Prenav openTime='8am' closeTime='5pm' />
+                    :
+                    null
+            }
 
-        {children}
+            {
+                navbar ?
+                    <Navbar />
+                    :
+                    null
+            }
 
-        {
-            footer ?
-                <Footer />
-                :
-                null
-        }
+            {children}
 
-    </AppWrapper>
+            {
+                footer ?
+                    <Footer />
+                    :
+                    null
+            }
+
+        </AppWrapper>
+
+    </div>
 
 )
 
