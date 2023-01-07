@@ -7,7 +7,7 @@ import { Prenav } from './Navigation/Prenav';
 
 const Layout:React.FC<GlobalTypes> = ({ prenav, navbar, children, footer}) => (
 
-    <div className='min-h-screen min-w-fit'>
+    <div className='min-h-screen'>
 
         <AppWrapper>
 
